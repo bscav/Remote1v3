@@ -39,9 +39,9 @@ div#footer {
 div#content {
     position: fixed;
 	align: left;
-    top: 80px;
-    left: 40px;
-    bottom: 25px;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
     min-width: 400px;
     width: 70%;
     background: black;
@@ -58,18 +58,25 @@ div#content iframe {
 }
 /** END CHANGES **/
 
-div#block {
-    
-    background-color: lightgreen;
-    margin: 40px;
+div#buttons {
     position: fixed;
-    top: 80px;
-    left: 50%;
-    width: 200px;
-    bottom: 25px;
-    min-width: 200px;
+	align: right;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    min-width: 300px;
+    width: 30%;
+    background: black;
+}
 
-    
+div#buttons iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -87,7 +94,10 @@ body > div#footer {
 <div id="content">
     <iframe src="https://www.vmixcall.com/" allow="camera *;microphone *" name="frame2" id="frame2" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" onload="" allowtransparency="false"></iframe>
 </div>
-<div id="block"></div>
+<div id="buttons">
+	<iframe src="https://bscav.ngrok.io/tablet?display_cols=1&max_col=7&max_row=2&min_col=7&min_row=0&noconfigure=1&nofullscreen=1&pages=60" name="buttons"
+	id="buttons" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" onload="" allowtransparency="false"></iframe>
+</div>
 <div id="header"></div>
 <div id="footer"></div>
    </body>
