@@ -5,9 +5,9 @@
         <style>
 body {
     margin: 0px;
-    padding-top: 0px;
+    padding-top: 78px;
     padding-right: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 25px;
     padding-left: 0px;
     min-height: 0px;
     height: auto;
@@ -16,21 +16,38 @@ body {
     overflow:hidden;
 }
 
+div#header {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    min-width: 1000px;
+    overflow: hidden;
+    background-color: black;
+}
 
+div#footer {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    min-width: 1000px;
+    background-color: black;
+}
 
 /** START CHANGES **/
-div#content1 {
+div#content {
     position: fixed;
-    top: 1px;
-    left: 1px;
-    align: left;
-    min-width: 700px;
+	align: left;
+    top: 80px;
+    left: 40px;
+    bottom: 25px;
+    min-width: 400px;
     width: 70%;
-	height: 95%;
     background: black;
 }
 
-div#content1 iframe {
+div#content iframe {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -41,26 +58,18 @@ div#content1 iframe {
 }
 /** END CHANGES **/
 
-div#content2 {
+div#block {
+    
+    background-color: lightgreen;
+    margin: 40px;
     position: fixed;
-    top: 1px;
-    right: 1px;
-align: right;
-    min-width: 300px;
-    width: 29%;
-	height: 95%;
-    background: black;
-}
+    top: 80px;
+    left: 50%;
+    width: 200px;
+    bottom: 25px;
+    min-width: 200px;
 
-div#content2 iframe {
-    position: absolute;
-
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
+    
 }
 
 
@@ -76,10 +85,10 @@ body > div#footer {
 </style>
     <body>
 <div id="content">
-    <iframe src="https://www.vmixcall.com/" allow="camera *;microphone *" name="frame1" id="frame1" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" onload="" allowtransparency="false"></iframe>
+    <iframe src="https://www.vmixcall.com/" allow="camera *;microphone *" name="frame2" id="frame2" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" onload="" allowtransparency="false"></iframe>
 </div>
-<div id="content2">
-    <iframe src="https://bscav.ngrok.io/tablet?display_cols=1&max_col=7&max_row=2&min_col=7&min_row=0&noconfigure=1&nofullscreen=1&pages=60" name="frame2" id="frame2" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" onload="" allowtransparency="false"></iframe>
-</div>
+<div id="block"></div>
+<div id="header"></div>
+<div id="footer"></div>
    </body>
 </html>
